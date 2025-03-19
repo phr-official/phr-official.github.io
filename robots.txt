@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://phr-official.github.io/sitemap.xml
+
