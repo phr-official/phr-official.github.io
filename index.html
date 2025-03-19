@@ -85,6 +85,17 @@ img {
     height: auto;
 }
 
+/* 모바일 화면에서 5% 키우기 */
+@media (max-width: 767px) {
+    .container {
+        width: 85vw; /* 기존 80vw → 85vw로 확대 */
+    }
+
+    img {
+        max-width: 105%; /* 기존 100% → 105%로 확대 */
+    }
+}
+
 /* 데스크탑 (1080px 이상) */
 @media (min-width: 1080px) {
     .container {
