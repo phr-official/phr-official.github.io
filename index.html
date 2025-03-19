@@ -70,32 +70,18 @@
             margin: 20px auto;
         }
 
-/* 공통 스타일 */
 .container {
-    width: 80vw;
-    max-width: 1200px;  /* PC에서 너무 작지 않도록 조정 */
-    margin: 0 auto;
-    padding: 2vw;
+    width: 90%; /* 전체 화면의 90%를 차지하도록 설정 */
+    max-width: 1080px; /* 최대 크기 제한 (PC에서 너무 커지는 것을 방지) */
+    margin: 0 auto; /* 중앙 정렬 */
 }
 
-/* 이미지 크기 조정 - 기본적으로 모바일에서 꽉 차게 */
 img {
-    width: 100%;
-    max-width: 100%;  /* 모바일에서는 100% 꽉 차도록 설정 */
-    height: auto;
+    width: 100%; /* 부모 요소의 너비에 맞게 자동 조정 */
+    height: auto; /* 비율 유지하면서 자동 조정 */
+    max-width: 100%; /* 너무 커지지 않도록 제한 */
 }
 
-/* 데스크탑 (1080px 이상) */
-@media (min-width: 1080px) {
-    .container {
-        width: 70vw;  
-        max-width: 1100px;
-    }
-
-    img {
-        max-width: 700px; /* PC에서는 적절한 크기로 제한 */
-    }
-}
 
 
 
