@@ -70,32 +70,28 @@
             margin: 20px auto;
         }
 
-    /* 기본 설정: 모든 화면 크기에서 자동 조정 */
+   /* 기본 설정: 자동 반응 */
 .container {
-    width: 90vw;  /* 화면 너비의 90%로 자동 조정 */
-    margin: 0 auto;  /* 가운데 정렬 */
-    padding: 2vw;  /* 여백도 뷰포트 기준 */
+    width: 90vw;
+    max-width: 1200px;  /* PC에서 최대 너비 제한 */
+    margin: 0 auto;
+    padding: 2vw;
 }
 
 img {
-    width: 100%;  /* 가로폭을 부모 요소에 맞게 자동 조정 */
-    max-width: 1000px;  /* 너무 커지지 않도록 최대 크기 제한 */
+    width: 100%;
+    max-width: 800px; /* PC에서 너무 커지지 않도록 제한 */
     height: auto;
-}
-
-/* 작은 태블릿 (768px 이상) */
-@media (min-width: 768px) {
-    .container {
-        width: 80vw; /* 태블릿에서는 80% */
-    }
 }
 
 /* 데스크탑 (1080px 이상) */
 @media (min-width: 1080px) {
     .container {
-        width: 70vw; /* 큰 화면에서는 70% */
+        width: 70vw;
+        max-width: 1000px; /* 큰 화면에서 최대 크기 제한 */
     }
 }
+
 
 
 
