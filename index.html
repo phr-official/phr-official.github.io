@@ -21,41 +21,53 @@
   gtag('js', new Date());
   gtag('config', 'G-S9LRYSM9WC');
 </script>
+
     <title>PHR 솔루션</title>
-    <style>
+
+ <style>
+/* 기본 스타일 설정 */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+    text-align: center;
+}
+
+/* 전체 레이아웃을 1080px로 제한 */
+.container {
+    max-width: 1080px;
+    margin: 0 auto;
+}
+
+/* 이미지 크기 조정 */
 img {
-    max-width: 80%; /* 화면 크기에 맞게 조정 (PC에서 작아지도록 설정) */
-    height: auto;  /* 비율 유지 */
+    width: 100%;
+    max-width: 100%;
+    height: auto;
     display: block;
     margin: 0 auto;
 }
 
-@media (max-width: 1080px) {
-    img {
-        max-width: 100%; /* 모바일에서는 꽉 차게 표시 */
-    }
+/* 버튼 크기 조정 */
+.button {
+    display: block;
+    width: 100%;
+    max-width: 300px; /* 버튼 크기를 너무 크게 만들지 않음 */
+    margin: 20px auto;
 }
 
+/* PC에서 이미지 크기 조정 */
+@media (min-width: 1080px) {
+    .container {
+        max-width: 80%;
+    }
+    
+    img {
+        max-width: 80%; /* PC 화면에서 이미지가 너무 커지지 않도록 */
+    }
+}
+</style>
 
-        body {
-            margin: 0;
-            padding: 0;
-            text-align: center;
-            background-color: #000;
-        }
-        img {
-            width: 100%;
-            max-width: 1080px;
-            display: block;
-            margin: 0 auto;
-        }
-        .button {
-            display: block;
-            width: 100%;
-            max-width: 1080px;
-            margin: 20px auto;
-        }
-    </style>
 </head>
 <body>
     <img src="0.png" alt="Header Image">
