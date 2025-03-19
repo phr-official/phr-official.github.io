@@ -70,29 +70,31 @@
             margin: 20px auto;
         }
 
-   /* 기본 설정: 자동 반응 */
+  /* 기본 설정: 자동 반응 */
 .container {
-    width: 90vw;
-    max-width: 1200px;  /* PC에서 최대 너비 제한 */
+    width: 80vw; /* 기존보다 20% 더 축소 */
+    max-width: 960px;  /* PC에서 최대 너비 제한 */
     margin: 0 auto;
     padding: 2vw;
 }
 
 img {
     width: 100%;
-    max-width: 800px; /* PC에서 너무 커지지 않도록 제한 */
+    max-width: 640px; /* 기존보다 20% 더 축소 */
     height: auto;
 }
 
 /* 데스크탑 (1080px 이상) */
 @media (min-width: 1080px) {
     .container {
-        width: 70vw;
-        max-width: 1000px; /* 큰 화면에서 최대 크기 제한 */
+        width: 60vw;  /* 기존보다 20% 더 축소 */
+        max-width: 800px; /* 큰 화면에서 최대 크기 제한 */
+    }
+
+    img {
+        max-width: 600px; /* 기존보다 20% 더 축소 */
     }
 }
-
-
 
 
     </style>
